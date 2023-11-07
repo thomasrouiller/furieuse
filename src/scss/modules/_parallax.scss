@@ -1,0 +1,11 @@
+.parallax {
+  position: relative;
+  height: 150vw;
+  overflow: hidden;
+  background-image: url(../img/home_page/header/background.webp);
+}
+
+.layer {
+  position: absolute;
+  bottom: 0;
+}
