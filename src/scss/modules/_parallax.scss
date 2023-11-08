@@ -1,3 +1,12 @@
+// .bg {
+//   position: absolute;
+//   z-index: 1;
+//   background-color: #ffbed0;
+//   width: 100vh;
+//   height: 100vh;
+//   opacity: 0;
+// }
+
 .parallax {
   position: relative;
   height: 150vw;
@@ -17,4 +26,9 @@
 
 .layer-7 {
   width: 200%;
+  scale: 1.5;
+}
+
+.layer-8 {
+  bottom: -60;
 }
