@@ -2,6 +2,22 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+window.addEventListener("load", function () {
+  gsap.from("#js-parallax", {
+    y: "100%",
+    duration: 2,
+    ease: "power4.out",
+  });
+
+  gsap.from("#js-layer-5", {
+    scale: 0.8,
+    opacity: 0,
+    duration: 1,
+    delay: 1,
+    ease: "power3.out",
+  });
+});
+
 gsap.from("#js-layer-1", {
   y: 0,
   ease: "none",
@@ -85,28 +101,4 @@ gsap.from("#js-layer-7", {
 //   },
 //   x: "-75%",
 //   ease: "sine.inOut",
-// });
-
-// Ensure that the DOM content is fully loaded before running the animation
-window.addEventListener("load", function () {
-  // Initial animation for .parallax
-  gsap.from(".parallax", {
-    y: "100%", // Start position from the bottom
-    duration: 2, // Animation duration
-    ease: "power4.out", // Easing function
-  });
-
-  // Initial animation for .layer-5
-  gsap.from(".layer-5", {
-    scale: 0.8,
-    opacity: 0, // Start with opacity 0
-    duration: 1, // Animation duration
-    delay: 1, // Delay the start of the animation
-  });
-});
-
-// gsap.from("#js-bg", {
-//   opacity: 100,
-//   duration: 1,
-//   delay: 0,
 // });
