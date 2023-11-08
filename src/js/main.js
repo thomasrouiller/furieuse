@@ -68,6 +68,7 @@ gsap.from("#js-layer-4", {
 
 gsap.from("#js-layer-6", {
   y: 400,
+  scale: 2,
   ease: "none",
   scrollTrigger: {
     trigger: "#js-parallax",
@@ -79,12 +80,63 @@ gsap.from("#js-layer-6", {
 });
 
 gsap.from("#js-layer-7", {
-  y: 600,
+  y: 200,
+  scale: 3,
   ease: "none",
   scrollTrigger: {
     trigger: "#js-parallax",
     start: "top top",
     end: "bottom center",
+    scrub: true,
+    markers: true,
+  },
+});
+
+gsap.from("#js-section-layer-1", {
+  y: 50,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#js-section-1",
+    start: "top 80%",
+    end: "bottom top",
+    scrub: true,
+    markers: true,
+  },
+});
+
+gsap.from("#js-section-layer-2", {
+  y: -100,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#js-section-1",
+    start: "top 80%",
+    end: "bottom top",
+    scrub: true,
+    markers: true,
+  },
+});
+
+gsap.from("#js-section-layer-3", {
+  x: -300,
+  scale: 0.9,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#js-section-1",
+    start: "top 80%",
+    end: "bottom center",
+    scrub: true,
+    markers: true,
+  },
+});
+
+gsap.from("#js-section-layer-4", {
+  x: 50,
+  scale: 1,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#js-section-1",
+    start: "top 80%",
+    end: "bottom 70%",
     scrub: true,
     markers: true,
   },
