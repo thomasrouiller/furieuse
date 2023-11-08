@@ -1,0 +1,27 @@
+.section {
+  position: relative;
+  height: 50vw;
+}
+.section-txt-style {
+  font-family: "harbour";
+  color: #fff;
+  text-shadow: 10px 6px 13px rgba(0, 0, 0, 0.8);
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section-layer-4 {
+  position: absolute;
+  top: 40%;
+  right: 15%;
+}
+
+.section-layer {
+  position: absolute;
+  bottom: 0;
+}
