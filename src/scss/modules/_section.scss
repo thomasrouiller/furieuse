@@ -3,6 +3,12 @@
   height: 50vw;
   overflow: hidden;
 }
+
+.section-layer {
+  position: absolute;
+  bottom: 0;
+}
+
 .section-txt-style {
   font-family: "harbour";
   color: #fff;
@@ -16,23 +22,18 @@
   text-align: center;
 }
 
-.section-layer-4 {
+.section-king-layer-4 {
   scale: 1.5;
   position: absolute;
   top: 40%;
   right: 15%;
 }
 
-.section-layer-1 {
+.section-king-layer-1 {
   scale: 1.5;
 }
 
-.section-layer-3 {
+.section-king-layer-3 {
   bottom: 0;
   left: 0;
-}
-
-.section-layer {
-  position: absolute;
-  bottom: 0;
 }

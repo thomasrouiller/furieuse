@@ -9,7 +9,7 @@ window.addEventListener("load", function () {
     ease: "power4.out",
   });
 
-  gsap.from("#js-layer-5", {
+  gsap.from("#js-parallax-layer-5", {
     scale: 0.8,
     opacity: 0,
     duration: 1,
@@ -18,7 +18,7 @@ window.addEventListener("load", function () {
   });
 });
 
-gsap.from("#js-layer-1", {
+gsap.from("#js-parallax-layer-1", {
   y: 0,
   ease: "none",
   scrollTrigger: {
@@ -30,7 +30,7 @@ gsap.from("#js-layer-1", {
   },
 });
 
-gsap.from("#js-layer-2", {
+gsap.from("#js-parallax-layer-2", {
   y: 50,
   ease: "none",
   scrollTrigger: {
@@ -42,7 +42,7 @@ gsap.from("#js-layer-2", {
   },
 });
 
-gsap.from("#js-layer-3", {
+gsap.from("#js-parallax-layer-3", {
   y: 100,
   ease: "none",
   scrollTrigger: {
@@ -54,7 +54,7 @@ gsap.from("#js-layer-3", {
   },
 });
 
-gsap.from("#js-layer-4", {
+gsap.from("#js-parallax-layer-4", {
   y: 350,
   ease: "none",
   scrollTrigger: {
@@ -66,7 +66,7 @@ gsap.from("#js-layer-4", {
   },
 });
 
-gsap.from("#js-layer-6", {
+gsap.from("#js-parallax-layer-6", {
   y: 400,
   scale: 2,
   ease: "none",
@@ -79,7 +79,7 @@ gsap.from("#js-layer-6", {
   },
 });
 
-gsap.from("#js-layer-7", {
+gsap.from("#js-parallax-layer-7", {
   y: 200,
   scale: 3,
   ease: "none",
@@ -92,7 +92,7 @@ gsap.from("#js-layer-7", {
   },
 });
 
-gsap.from("#js-section-layer-1", {
+gsap.from("#js-section-king-layer-1", {
   y: 50,
   ease: "none",
   scrollTrigger: {
@@ -104,7 +104,7 @@ gsap.from("#js-section-layer-1", {
   },
 });
 
-gsap.from("#js-section-layer-2", {
+gsap.from("#js-section-king-layer-2", {
   y: -100,
   ease: "none",
   scrollTrigger: {
@@ -116,7 +116,7 @@ gsap.from("#js-section-layer-2", {
   },
 });
 
-gsap.from("#js-section-layer-3", {
+gsap.from("#js-section-king-layer-3", {
   x: -300,
   scale: 0.9,
   ease: "none",
@@ -129,7 +129,7 @@ gsap.from("#js-section-layer-3", {
   },
 });
 
-gsap.from("#js-section-layer-4", {
+gsap.from("#js-section-king-layer-4", {
   x: 50,
   scale: 1,
   ease: "none",
