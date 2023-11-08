@@ -1,0 +1,47 @@
+.screen-slider-mask {
+  border: 5px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.screen-slider-track {
+  height: 100%;
+  display: inline-flex;
+  border: 5px solid red;
+  border-radius: 5px;
+}
+
+.screen-slider-track .screen {
+  width: calc(100vw - 30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid blue;
+}
+
+.screen-bg {
+  height: 100vh;
+  z-index: -10;
+}
+
+.screen {
+  position: relative;
+  overflow: visible;
+}
+
+.screen-layer {
+  position: absolute;
+}
+
+.screen-ysa-layer-2 {
+  left: -10%;
+  height: 100vh;
+}
+
+.screen-ysa-layer-3 {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+}
