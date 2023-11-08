@@ -2,6 +2,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+// loading
+
 window.addEventListener("load", function () {
   gsap.from("#js-parallax", {
     y: "100%",
@@ -17,6 +19,8 @@ window.addEventListener("load", function () {
     ease: "power3.out",
   });
 });
+
+// parallax
 
 gsap.from("#js-parallax-layer-1", {
   y: 0,
@@ -92,6 +96,8 @@ gsap.from("#js-parallax-layer-7", {
   },
 });
 
+// king
+
 gsap.from("#js-section-king-layer-1", {
   y: 50,
   ease: "none",
@@ -135,6 +141,110 @@ gsap.from("#js-section-king-layer-4", {
   ease: "none",
   scrollTrigger: {
     trigger: "#js-section-1",
+    start: "top 80%",
+    end: "bottom 70%",
+    scrub: true,
+    markers: true,
+  },
+});
+
+// ysa
+
+gsap.from("#js-section-ysa-layer-1", {
+  y: 50,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#js-section-2",
+    start: "top 80%",
+    end: "bottom top",
+    scrub: true,
+    markers: true,
+  },
+});
+
+gsap.from("#js-section-ysa-layer-2", {
+  y: 50,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#js-section-2",
+    start: "top 80%",
+    end: "bottom top",
+    scrub: true,
+    markers: true,
+  },
+});
+
+gsap.from("#js-section-ysa-layer-3", {
+  x: 300,
+  scale: 0.9,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#js-section-2",
+    start: "top 80%",
+    end: "bottom center",
+    scrub: true,
+    markers: true,
+  },
+});
+
+gsap.from("#js-section-ysa-layer-4", {
+  x: -50,
+  scale: 1,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#js-section-2",
+    start: "top 80%",
+    end: "bottom 70%",
+    scrub: true,
+    markers: true,
+  },
+});
+
+// sword
+
+gsap.from("#js-section-sword-layer-1", {
+  y: 50,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#js-section-3",
+    start: "top 80%",
+    end: "bottom top",
+    scrub: true,
+    markers: true,
+  },
+});
+
+gsap.from("#js-section-sword-layer-2", {
+  y: 50,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#js-section-3",
+    start: "top 80%",
+    end: "bottom top",
+    scrub: true,
+    markers: true,
+  },
+});
+
+gsap.from("#js-section-sword-layer-3", {
+  x: -300,
+  scale: 0.9,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#js-section-3",
+    start: "top 80%",
+    end: "bottom center",
+    scrub: true,
+    markers: true,
+  },
+});
+
+gsap.from("#js-section-sword-layer-4", {
+  x: 50,
+  scale: 1,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#js-section-3",
     start: "top 80%",
     end: "bottom 70%",
     scrub: true,
