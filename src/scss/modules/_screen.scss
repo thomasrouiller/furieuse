@@ -2,6 +2,7 @@
   border: 5px solid black;
   border-radius: 10px;
   overflow: hidden;
+  background-color: #000;
 }
 
 .screen-slider-track {
@@ -19,7 +20,51 @@
   border: 5px solid blue;
 }
 
+.screen-slider-track .screen-1 {
+  width: calc(80vw - 30px);
+}
+
+.screen-slider-track .screen-2 {
+  width: calc(150vw - 30px);
+}
+
+.screen-slider-track .screen-3 {
+  width: calc(150vw - 30px);
+}
+
+.screen-slider-track .screen-4 {
+  width: calc(120vw - 30px);
+}
+
+.screen-txt-container {
+  position: absolute;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 20;
+  color: #fff;
+  text-shadow: 10px 6px 13px rgba(0, 0, 0, 0.8);
+}
+
+.screen-txt-container h2 {
+  text-transform: uppercase;
+  font-size: 128px;
+  font-family: "harbour";
+  font-weight: 500;
+  line-height: 101.5%;
+}
+
+.screen-txt-container p {
+  font-family: "katari";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 103%;
+}
+
 .screen-bg {
+  position: absolute;
   height: 100vh;
   z-index: -10;
 }
@@ -29,19 +74,86 @@
   overflow: visible;
 }
 
-.screen-layer {
-  position: absolute;
+.screen-1 {
+  z-index: 3;
 }
 
+.screen-2 {
+  z-index: 2;
+}
+
+.screen-3 {
+  z-index: 1;
+}
+
+.screen-3 {
+  z-index: 0;
+}
+
+.screen-layer {
+  position: absolute;
+  aspect-ratio: 1/1;
+}
+
+// ysa
+
 .screen-ysa-layer-2 {
-  left: -10%;
+  left: -300;
   height: 100vh;
 }
 
 .screen-ysa-layer-3 {
-  position: absolute;
   left: 50%;
   bottom: 0;
   width: 100%;
   height: 100vh;
+}
+
+.screen-ysa-layer-4 {
+  bottom: -20;
+  left: -100;
+  height: 90%;
+}
+
+// king
+
+.screen-king-layer-2 {
+  left: 15%;
+}
+
+.screen-king-layer-3 {
+  left: 0;
+  bottom: -200;
+  scale: 0.8;
+  aspect-ratio: 1/1;
+}
+
+.screen-king-layer-4 {
+  top: 7%;
+  left: 45%;
+  scale: 0.9;
+}
+
+.screen-king-layer-5 {
+  top: 7%;
+  left: 60%;
+}
+
+.screen-king-layer-6 {
+  top: 22%;
+  left: 60%;
+  scale: 1;
+}
+
+.screen-king-layer-7 {
+  bottom: -50;
+  left: 250;
+  scale: 0.9;
+}
+
+.screen-king-layer-8 {
+  left: 80%;
+  bottom: -10;
+  height: 100vh;
+  aspect-ratio: 1/1;
 }

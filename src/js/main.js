@@ -134,7 +134,7 @@ gsap.from("#js-section-king-layer-4", {
   scrollTrigger: {
     trigger: "#js-section-1",
     start: "top 80%",
-    end: "bottom 70%",
+    end: "bottom bottom",
     scrub: true,
   },
 });
@@ -183,7 +183,7 @@ gsap.from("#js-section-ysa-layer-4", {
   scrollTrigger: {
     trigger: "#js-section-2",
     start: "top 80%",
-    end: "bottom 70%",
+    end: "bottom bottom",
     scrub: true,
   },
 });
@@ -232,10 +232,12 @@ gsap.from("#js-section-sword-layer-4", {
   scrollTrigger: {
     trigger: "#js-section-3",
     start: "top 80%",
-    end: "bottom 70%",
+    end: "bottom bottom",
     scrub: true,
   },
 });
+
+// slider
 
 gsap.to(".screen-slider-track", {
   scrollTrigger: {
@@ -249,3 +251,67 @@ gsap.to(".screen-slider-track", {
   x: "-75%",
   ease: "sine.inOut",
 });
+
+gsap.from(".screen-slider-track", {
+  scrollTrigger: {
+    trigger: ".screen-slider-mask",
+    start: "top 70%",
+    markers: true,
+  },
+  opacity: 0,
+  duration: 1.5,
+  ease: "sine.inOut",
+});
+
+// slider timeline
+
+// const timeline = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: "#js-screen-1",
+//     start: "top center",
+//     end: "bottom center",
+//     // scrub: true,
+//   },
+// });
+
+// timeline.from("#js-screen-ysa-layer-4", {
+//   opacity: 0.8,
+//   x: -400,
+//   duration: 1,
+//   ease: "power1.inOut",
+// });
+
+// timeline.from("#js-screen-txt-container", {
+//   opacity: 0,
+//   scale: 0.7,
+//   x: 200,
+//   duration: 0.5,
+//   ease: "power1.out",
+// });
+
+// scroll anim
+
+// gsap.from("#js-screen-ysa-layer-4", {
+//   opacity: 0.8,
+//   x: -400,
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: "#js-screen-1",
+//     start: "top center",
+//     end: "bottom center",
+//     scrub: true,
+//   },
+// });
+
+// gsap.from("#js-screen-txt-container", {
+//   opacity: 1,
+//   scale: 0.7,
+//   x: 200,
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: "#js-screen-1",
+//     start: "top center",
+//     end: "bottom center",
+//     scrub: true,
+//   },
+// });
