@@ -35,6 +35,7 @@ gsap.from("#js-parallax-layer-1", {
 
 gsap.from("#js-parallax-layer-2", {
   y: 50,
+  scale: 2,
   ease: "none",
   scrollTrigger: {
     trigger: "#js-parallax",
@@ -46,6 +47,7 @@ gsap.from("#js-parallax-layer-2", {
 
 gsap.from("#js-parallax-layer-3", {
   y: 100,
+  scale: 1.6,
   ease: "none",
   scrollTrigger: {
     trigger: "#js-parallax",
@@ -57,6 +59,7 @@ gsap.from("#js-parallax-layer-3", {
 
 gsap.from("#js-parallax-layer-4", {
   y: 350,
+  scale: 1.2,
   ease: "none",
   scrollTrigger: {
     trigger: "#js-parallax",
@@ -79,7 +82,7 @@ gsap.from("#js-parallax-layer-6", {
 });
 
 gsap.from("#js-parallax-layer-7", {
-  y: 200,
+  y: 800,
   scale: 3,
   ease: "none",
   scrollTrigger: {
@@ -246,7 +249,6 @@ gsap.to(".screen-slider-track", {
     end: "+=300%",
     pin: true,
     scrub: true,
-    markers: true,
   },
   x: "-75%",
   ease: "sine.inOut",
@@ -256,7 +258,6 @@ gsap.from(".screen-slider-track", {
   scrollTrigger: {
     trigger: ".screen-slider-mask",
     start: "top 70%",
-    markers: true,
   },
   opacity: 0,
   duration: 1.5,
@@ -291,27 +292,39 @@ gsap.from(".screen-slider-track", {
 
 // scroll anim
 
-// gsap.from("#js-screen-ysa-layer-4", {
-//   opacity: 0.8,
-//   x: -400,
-//   ease: "none",
-//   scrollTrigger: {
-//     trigger: "#js-screen-1",
-//     start: "top center",
-//     end: "bottom center",
-//     scrub: true,
-//   },
-// });
+gsap.from("#js-screen-ysa-layer-4", {
+  opacity: 0.8,
+  x: -400,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#js-screen-1",
+    start: "top center",
+    end: "bottom center",
+    scrub: true,
+  },
+});
 
-// gsap.from("#js-screen-txt-container", {
-//   opacity: 1,
-//   scale: 0.7,
-//   x: 200,
-//   ease: "none",
-//   scrollTrigger: {
-//     trigger: "#js-screen-1",
-//     start: "top center",
-//     end: "bottom center",
-//     scrub: true,
-//   },
-// });
+gsap.from("#js-screen-txt-container-ysa", {
+  opacity: 0,
+  scale: 0.9,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#js-screen-1",
+    start: "top 60%",
+    end: "bottom 90%",
+    scrub: true,
+  },
+});
+
+gsap.from("#js-screen-txt-container-king", {
+  opacity: 0,
+  scale: 0.9,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#js-screen-2",
+    start: "top 60%",
+    end: "bottom 90%",
+    scrub: true,
+    markers: true,
+  },
+});
