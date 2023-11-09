@@ -1,0 +1,24 @@
+.header-nav {
+  position: absolute;
+  z-index: 30;
+  top: 20px;
+  right: 20px;
+}
+
+.header-nav a {
+  color: #8b384b;
+  text-align: center;
+  font-family: "katari";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 20px;
+  transition: transform 0.2s, color 0.2s;
+}
+
+a:hover {
+  transform: scale(1.1);
+  color: #ff5733;
+}

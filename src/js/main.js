@@ -6,8 +6,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 window.addEventListener("load", function () {
   gsap.from("#js-parallax", {
-    y: "100%",
+    // y: "100%",
     duration: 2,
+    opacity: 0,
     ease: "power4.out",
   });
 
@@ -16,6 +17,14 @@ window.addEventListener("load", function () {
     opacity: 0,
     duration: 1,
     delay: 1,
+    ease: "power3.out",
+  });
+
+  gsap.from("#js-header-nav", {
+    scale: 0.8,
+    opacity: 0,
+    duration: 2,
+    delay: 0,
     ease: "power3.out",
   });
 });
@@ -291,13 +300,14 @@ gsap.from(".screen-slider-track", {
 // });
 
 // scroll anim
+//ysa
 
 gsap.from("#js-screen-ysa-layer-4", {
   opacity: 0.8,
   x: -400,
   ease: "none",
   scrollTrigger: {
-    trigger: "#js-screen-1",
+    trigger: "#js-screen-slider-track",
     start: "top center",
     end: "bottom center",
     scrub: true,
@@ -309,22 +319,143 @@ gsap.from("#js-screen-txt-container-ysa", {
   scale: 0.9,
   ease: "none",
   scrollTrigger: {
-    trigger: "#js-screen-1",
-    start: "top 60%",
-    end: "bottom 90%",
+    trigger: "js-screen-slider-track",
+    start: "start+=40%",
+    end: "bottom-=50%",
     scrub: true,
   },
 });
+
+//king
 
 gsap.from("#js-screen-txt-container-king", {
   opacity: 0,
   scale: 0.9,
   ease: "none",
   scrollTrigger: {
-    trigger: "#js-screen-2",
-    start: "top 60%",
-    end: "bottom 90%",
+    trigger: "js-screen-slider-track",
+    start: "start+=55%",
+    end: "bottom-=39%",
     scrub: true,
     markers: true,
+  },
+});
+
+gsap.from("#js-screen-king-layer-4", {
+  x: 200,
+  y: 100,
+  scale: 0.9,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "js-screen-slider-track",
+    start: "start+=55%",
+    end: "bottom-=39%",
+    scrub: true,
+  },
+});
+
+gsap.from("#js-screen-king-layer-5", {
+  x: -200,
+  y: 100,
+  scale: 0.9,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "js-screen-slider-track",
+    start: "start+=55%",
+    end: "bottom-=35%",
+    scrub: true,
+  },
+});
+
+gsap.from("#js-screen-king-layer-6", {
+  x: -150,
+  y: -125,
+  scale: 0.9,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "js-screen-slider-track",
+    start: "start+=55%",
+    end: "bottom-=35%",
+    scrub: true,
+  },
+});
+
+gsap.from("#js-screen-king-layer-7", {
+  x: -200,
+  y: 100,
+  scale: 0.9,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "js-screen-slider-track",
+    start: "start+=55%",
+    end: "bottom-=39%",
+    scrub: true,
+  },
+});
+
+// baron
+
+gsap.from("#js-screen-txt-container-baron", {
+  opacity: 0,
+  scale: 0.9,
+  scale: 0.9,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "js-screen-slider-track",
+    start: "start+=66%",
+    end: "bottom-=29%",
+    scrub: true,
+  },
+});
+
+gsap.from("#js-screen-baron-layer-3", {
+  x: -200,
+  y: 100,
+  scale: 0.9,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "js-screen-slider-track",
+    start: "start+=66%",
+    end: "bottom-=27%",
+    scrub: true,
+  },
+});
+
+gsap.from("#js-screen-baron-layer-4", {
+  x: 200,
+  y: 100,
+  scale: 0.9,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "js-screen-slider-track",
+    start: "start+=66%",
+    end: "bottom-=27%",
+    scrub: true,
+  },
+});
+
+// sword
+
+gsap.from("#js-screen-txt-container-sword", {
+  opacity: 0,
+  scale: 0.9,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "js-screen-slider-track",
+    start: "start+=77%",
+    end: "bottom-=22%",
+    scrub: true,
+  },
+});
+
+gsap.from("#js-screen-sword-layer-3", {
+  x: -200,
+  scale: 1,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "js-screen-slider-track",
+    start: "start+=70%",
+    end: "bottom-=24%",
+    scrub: true,
   },
 });

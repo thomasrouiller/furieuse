@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 1500px;
 }
 
 .screen-slider-track .screen-1 {
@@ -28,12 +29,11 @@
 }
 
 .screen-slider-track .screen-4 {
-  width: calc(150vw - 30px);
+  width: calc(200vw - 30px);
 }
 
 .screen-txt-container {
   position: absolute;
-  right: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,6 +57,18 @@
   font-size: 40px;
   line-height: 103%;
 }
+
+// @media (max-width: 1440px) {
+//   .screen-txt-container h2 {
+//     font-size: 65px;
+//     line-height: 75px;
+//   }
+
+//   .screen-txt-container p {
+//     font-size: 22px;
+//     line-height: 27px;
+//   }
+// }
 
 .screen-bg {
   position: absolute;
@@ -82,7 +94,7 @@
   z-index: 1;
 }
 
-.screen-3 {
+.screen-4 {
   z-index: 0;
 }
 
@@ -92,6 +104,10 @@
 }
 
 // ysa
+
+.screen-1 .screen-txt-container {
+  left: 50%;
+}
 
 .screen-ysa-layer-2 {
   left: -300;
@@ -103,6 +119,7 @@
   bottom: 0;
   width: 100%;
   height: 100vh;
+  aspect-ratio: 2/1;
 }
 
 .screen-ysa-layer-4 {
@@ -113,6 +130,10 @@
 
 // king
 
+.screen-2 .screen-txt-container {
+  left: 70%;
+}
+
 .screen-king-layer-2 {
   left: 15%;
 }
@@ -121,7 +142,6 @@
   left: 0;
   bottom: -200;
   scale: 0.8;
-  aspect-ratio: 1/1;
 }
 
 .screen-king-layer-4 {
@@ -137,7 +157,7 @@
 
 .screen-king-layer-6 {
   top: 22%;
-  left: 60%;
+  left: 1400;
   scale: 1;
 }
 
@@ -149,7 +169,48 @@
 
 .screen-king-layer-8 {
   left: 80%;
-  bottom: -10;
+  bottom: 0;
   height: 100vh;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1.2/1;
+}
+
+// baron
+
+.screen-3 .screen-txt-container {
+  left: 60%;
+}
+
+.screen-baron-layer-2 {
+  width: 100%;
+  opacity: 0.8;
+}
+
+.screen-baron-layer-3 {
+  bottom: -100;
+  scale: 0.9;
+  left: 33%;
+}
+
+.screen-baron-layer-4 {
+  bottom: -100;
+  scale: 0.8;
+  left: 19%;
+}
+
+.screen-baron-layer-5 {
+  left: 80%;
+}
+
+// sword
+
+.screen-4 .screen-txt-container {
+  left: 50%;
+}
+
+.screen-sword-layer-3 {
+  bottom: 0;
+  scale: 1.2;
+  height: 100vh;
+  aspect-ratio: 1.5/1;
+  left: 10%;
 }
