@@ -273,32 +273,6 @@ gsap.from(".screen-slider-track", {
   ease: "sine.inOut",
 });
 
-// slider timeline
-
-// const timeline = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: "#js-screen-1",
-//     start: "top center",
-//     end: "bottom center",
-//     // scrub: true,
-//   },
-// });
-
-// timeline.from("#js-screen-ysa-layer-4", {
-//   opacity: 0.8,
-//   x: -400,
-//   duration: 1,
-//   ease: "power1.inOut",
-// });
-
-// timeline.from("#js-screen-txt-container", {
-//   opacity: 0,
-//   scale: 0.7,
-//   x: 200,
-//   duration: 0.5,
-//   ease: "power1.out",
-// });
-
 // scroll anim
 //ysa
 
@@ -401,10 +375,9 @@ gsap.from("#js-screen-txt-container-baron", {
   ease: "none",
   scrollTrigger: {
     trigger: "js-screen-slider-track",
-    start: "start+=66%",
-    end: "bottom-=29%",
+    start: "start+=60%",
+    end: "bottom-=35%",
     scrub: true,
-    markers: true,
   },
 });
 
@@ -415,9 +388,10 @@ gsap.from("#js-screen-baron-layer-3", {
   ease: "none",
   scrollTrigger: {
     trigger: "js-screen-slider-track",
-    start: "start+=66%",
-    end: "bottom-=27%",
+    start: "start+=60%",
+    end: "bottom-=35%",
     scrub: true,
+    markers: true,
   },
 });
 
@@ -428,8 +402,8 @@ gsap.from("#js-screen-baron-layer-4", {
   ease: "none",
   scrollTrigger: {
     trigger: "js-screen-slider-track",
-    start: "start+=66%",
-    end: "bottom-=27%",
+    start: "start+=60%",
+    end: "bottom-=35%",
     scrub: true,
   },
 });
@@ -442,8 +416,8 @@ gsap.from("#js-screen-txt-container-sword", {
   ease: "none",
   scrollTrigger: {
     trigger: "js-screen-slider-track",
-    start: "start+=77%",
-    end: "bottom-=22%",
+    start: "start+=60%",
+    end: "bottom-=30%",
     scrub: true,
   },
 });

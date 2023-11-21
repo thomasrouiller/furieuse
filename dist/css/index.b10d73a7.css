@@ -5402,7 +5402,7 @@ body {
 }
 
 .footer-spacer {
-  width: 100vw;
+  width: 100%;
   background-color: #fff;
   margin: 60px 0 72px;
   padding-top: 1px;
@@ -5526,14 +5526,19 @@ body {
 
 .footer-socials {
   flex-direction: row;
+  margin-bottom: -20px;
   margin-left: 55px;
   display: flex;
-  position: absolute;
 }
 
 .footer-socials img {
   width: 25px;
   margin-right: 50px;
+  transition: all .5s;
+}
+
+.footer-socials img:hover {
+  scale: 1.1;
 }
 
 /*# sourceMappingURL=index.b10d73a7.css.map */

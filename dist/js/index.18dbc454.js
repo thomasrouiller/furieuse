@@ -779,28 +779,6 @@ window.addEventListener("load", function() {
     duration: 1.5,
     ease: "sine.inOut"
 });
-// slider timeline
-// const timeline = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: "#js-screen-1",
-//     start: "top center",
-//     end: "bottom center",
-//     // scrub: true,
-//   },
-// });
-// timeline.from("#js-screen-ysa-layer-4", {
-//   opacity: 0.8,
-//   x: -400,
-//   duration: 1,
-//   ease: "power1.inOut",
-// });
-// timeline.from("#js-screen-txt-container", {
-//   opacity: 0,
-//   scale: 0.7,
-//   x: 200,
-//   duration: 0.5,
-//   ease: "power1.out",
-// });
 // scroll anim
 //ysa
 (0, _gsapDefault.default).from("#js-screen-ysa-layer-4", {
@@ -893,10 +871,9 @@ window.addEventListener("load", function() {
     ease: "none",
     scrollTrigger: {
         trigger: "js-screen-slider-track",
-        start: "start+=66%",
-        end: "bottom-=29%",
-        scrub: true,
-        markers: true
+        start: "start+=60%",
+        end: "bottom-=35%",
+        scrub: true
     }
 });
 (0, _gsapDefault.default).from("#js-screen-baron-layer-3", {
@@ -906,9 +883,10 @@ window.addEventListener("load", function() {
     ease: "none",
     scrollTrigger: {
         trigger: "js-screen-slider-track",
-        start: "start+=66%",
-        end: "bottom-=27%",
-        scrub: true
+        start: "start+=60%",
+        end: "bottom-=35%",
+        scrub: true,
+        markers: true
     }
 });
 (0, _gsapDefault.default).from("#js-screen-baron-layer-4", {
@@ -918,8 +896,8 @@ window.addEventListener("load", function() {
     ease: "none",
     scrollTrigger: {
         trigger: "js-screen-slider-track",
-        start: "start+=66%",
-        end: "bottom-=27%",
+        start: "start+=60%",
+        end: "bottom-=35%",
         scrub: true
     }
 });
@@ -930,8 +908,8 @@ window.addEventListener("load", function() {
     ease: "none",
     scrollTrigger: {
         trigger: "js-screen-slider-track",
-        start: "start+=77%",
-        end: "bottom-=22%",
+        start: "start+=60%",
+        end: "bottom-=30%",
         scrub: true
     }
 });

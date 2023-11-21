@@ -6,7 +6,7 @@
 
 .footer-spacer {
   padding-top: 1px;
-  width: 100vw;
+  width: 100%;
   background-color: white;
   margin: 60 0 72 0;
 }
@@ -129,13 +129,18 @@
 }
 
 .footer-socials {
-  position: absolute;
   display: flex;
   flex-direction: row;
   margin-left: 55px;
+  margin-bottom: -20px;
 }
 
 .footer-socials img {
   width: 25px;
   margin-right: 50px;
+  transition: 0.5s;
+}
+
+.footer-socials img:hover {
+  scale: 1.1;
 }
