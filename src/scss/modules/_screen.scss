@@ -135,6 +135,7 @@
 }
 
 .screen-king-layer-2 {
+  width: 80%;
   left: 15%;
 }
 
@@ -199,6 +200,7 @@
 
 .screen-baron-layer-5 {
   left: 80%;
+  height: 120%;
 }
 
 // sword
@@ -212,5 +214,19 @@
   scale: 1.2;
   height: 100vh;
   aspect-ratio: 1.5/1;
-  left: 10%;
+  left: 5%;
+}
+
+@media (max-width: 1200px) {
+  .screen-txt-container h2 {
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 101.5%;
+  }
+
+  .screen-txt-container p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 103%;
+  }
 }

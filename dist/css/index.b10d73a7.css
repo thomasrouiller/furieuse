@@ -5295,6 +5295,7 @@ body {
 }
 
 .screen-king-layer-2 {
+  width: 80%;
   left: 15%;
 }
 
@@ -5356,6 +5357,7 @@ body {
 }
 
 .screen-baron-layer-5 {
+  height: 120%;
   left: 80%;
 }
 
@@ -5367,8 +5369,22 @@ body {
   height: 100vh;
   aspect-ratio: 1.5 / 1;
   bottom: 0;
-  left: 10%;
+  left: 5%;
   scale: 1.2;
+}
+
+@media (max-width: 1200px) {
+  .screen-txt-container h2 {
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 101.5%;
+  }
+
+  .screen-txt-container p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 103%;
+  }
 }
 
 .header-nav {
@@ -5423,7 +5439,7 @@ body {
 
 @media (max-width: 1200px) {
   .footer-book-container img {
-    width: 500px;
+    width: 400px;
     margin-left: 40px;
   }
 }
@@ -5526,7 +5542,6 @@ body {
 
 .footer-socials {
   flex-direction: row;
-  margin-bottom: -20px;
   margin-left: 55px;
   display: flex;
 }
