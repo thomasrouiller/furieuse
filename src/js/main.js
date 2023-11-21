@@ -337,7 +337,6 @@ gsap.from("#js-screen-txt-container-king", {
     start: "start+=55%",
     end: "bottom-=39%",
     scrub: true,
-    markers: true,
   },
 });
 
@@ -405,6 +404,7 @@ gsap.from("#js-screen-txt-container-baron", {
     start: "start+=66%",
     end: "bottom-=29%",
     scrub: true,
+    markers: true,
   },
 });
 

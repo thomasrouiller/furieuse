@@ -43,3 +43,34 @@ video {
 /* ====================================
 // base rules
 // ==================================== */
+
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 140px;
+}
+
+footer h3 {
+  font-family: "harbour";
+  font-family: Harbour;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  margin: 31 0 17 0;
+}
+
+footer p {
+  font-family: "katari";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+footer a {
+  font-family: "katari";
+  text-decoration: none;
+}
