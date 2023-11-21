@@ -391,7 +391,6 @@ gsap.from("#js-screen-baron-layer-3", {
     start: "start+=60%",
     end: "bottom-=35%",
     scrub: true,
-    markers: true,
   },
 });
 
